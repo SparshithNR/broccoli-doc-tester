@@ -27,7 +27,7 @@ describe('BroccoliDocTester', function() {
     });
 
     let node = new BroccoliDocTester(input.path(), {
-      outputDir: 'docs-test'
+      destDir: 'docs-test'
     });
 
     let output = await buildOutput(node);

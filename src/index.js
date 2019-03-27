@@ -24,7 +24,7 @@ export default class BroccoliDocTester extends Plugin {
   }
 
   build() {
-    let funnledDir = this.inputNode.outputPath ? this.inputNode.outputPath : this.inputNode;
+    let funnledDir = this.inputPaths[0];
     const destDir = this.options.destDir || 'markdown-tests';
     let files = sync('*.md', {
       cwd: funnledDir
